@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        *{
+            object-fit: cover;
+            box-sizing: border-box;
+        }
+        .wrapper{
+            background-image:url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1500&q=80');
+            height: 100vh;
+            width: 100vw;
+            background-size: cover;
+            background-position-y: -150px;
+        }
+        .box{
+            height: 20rem;
+            width: 20rem;
+            border: 1px solid rgba(255, 255, 255, 0.267);
+            border-radius: 10px;
+            
+        }
+        .container{
+            height:500px;
+            width: 500px;
+            transform: translateY(-4rem);
+        }
+        .smbox{
+            height:100%;
+        }
+        .box-inside{
+            backdrop-filter: blur(0.7px);
+            background-color: rgba(255, 255, 255, 0.1);
+
+        }
+        .head{
+            border: 1px solid rgba(255, 255, 255, 0.267);
+            transform: translateY(-1.7rem);
+        }
+        .box1,.box2,.box3,.box4,.box5,.box6{
+            border-bottom: 1px solid white;
+        }
+        .box1,.box2,.box4,.box5,.box7,.box8{
+            border-right: 1px solid white;
+        }
+        
+
+
+    
+    </style>
+</head>
+<body>
+   
+    <div class="wrapper text-white flex justify-center items-center flex-col">
+        <div class="container flex items-center justify-center flex-col gap-y-20" >
+            
+            <div class="head h-10 w-57  border-white flex items-center justify-center rounded-[4rem] text-[15px] backdrop-blur-[1px]" data-move>currentPlayer -X </div>
+            <div class="box flex justify-center items-center" data-box-outside>
+                <div class="box-inside px-7 py-8 grid justify-center items-center grid-cols-3 grid-rows-3  border-white h-full w-full rounded-[10px] text-[47px]" data-box-inside>
+                    <box class="box1 smbox cursor-pointer flex justify-center items-center" data-box1></box>
+                    <box class="box2 smbox cursor-pointer flex justify-center items-center" data-box2></box>
+                    <box class="box3 smbox cursor-pointer flex justify-center items-center" data-box3></box>
+                    <box class="box4 smbox cursor-pointer flex justify-center items-center" data-box4></box>
+                    <box class="box5 smbox cursor-pointer flex justify-center items-center" data-box5></box>
+                    <box class="box6 smbox cursor-pointer flex justify-center items-center" data-box6></box>
+                    <box class="box7 smbox cursor-pointer flex justify-center items-center" data-box7></box>
+                    <box class="box8 smbox cursor-pointer flex justify-center items-center" data-box8></box>
+                    <box class="box9 smbox cursor-pointer flex justify-center items-center" data-box9></box>
+                      
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+       
+    <script src="8.js"></script>
+</body>
+</html>
